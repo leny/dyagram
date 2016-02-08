@@ -95,4 +95,17 @@ If the second value is a `string`, it defines the value of the property ; if its
 }
 ```
 
+#### `number`
+
+If the second value is a `number`, it define the value of the property ; if there's a third value, the two are used to define a valid range for the property's value.
+
+##### Example
+
+```javascript
+{
+    "age": [ "number", 30 ], // will check for the property age to be a number with 30 as value
+    "screens": [ "number", 1, 3 ] // will check for the property screens to be a number with a value between 1 & 3
+}
+```
+
 _TO BE CONTINUED_
